@@ -25,13 +25,13 @@ a{
 
 .footer {
     width: 100%;
-    position: fixed;
+    position: relative;
     bottom:0;
 }
 
 .Hero {
-  background: linear-gradient(0deg,rgba(8,17,32,0.6),rgba(0,59,108,0.5)), url('https://www.canva.com/learn/wp-content/uploads/2018/03/ryan-hutton-37733-unsplash.jpg');
-  height: 920px;
+  background: linear-gradient(0deg,rgba(8,17,32,0.6),rgba(0,59,108,0.5)), url('images/starrynight.jpeg');
+  height: 600px;
   background-size: cover;
   background-position: center;
   position: relative;
