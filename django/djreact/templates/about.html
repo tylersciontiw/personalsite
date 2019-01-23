@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load render_bundle from webpack_loader %}
+
+{% block main %}
+<div id="Heading"></div>
+<div>
+    <h1>Hi there, I'm Tyler</h1>
+    <p>Lorem ipsum dolor sit amet, ad vim choro altera appetere, nam no dictas deleniti interpretaris, unum prima at vix. Et per inani lobortis. In eum putant commune. Ex has case vitae laboramus, ut sit phaedrum antiopam, eum ex eirmod vivendo urbanitas. Delectus ullamcorper has at, sed quas latine sententiae in.
+
+        Novum ignota viderer ei est, at volumus inciderint eloquentiam eos. An homero omnesque nam. Eam ut omnis vitae salutandi, at usu sumo liber delenit. Facilis argumentum ei est. Ea convenire rationibus argumentum quo.
+        
+        Saepe sapientem vis cu, has nisl malis eu. At eos modus imperdiet, nam pertinax delicatissimi ea. Et mel tollit invidunt gubergren. Sea albucius aliquando cu, nam an laboramus neglegentur, qui omnes discere ut.
+        </p>
+</div>
+{% render_bundle 'vendors' %}
+{% render_bundle 'BasePage' %}
+{% endblock %}

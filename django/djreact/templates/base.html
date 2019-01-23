@@ -10,11 +10,11 @@
 </head>
   <body>
       <div class="menu">
-          <a href=""><img src="{% static '/images/logo.png' %}"></a>
-          <a href="">About</a>
-          <a href="">Writing</a>
+          <a href="{% url 'home' %}"><img src="{% static '/images/logo.png' %}"></a>
+          <a href="{% url 'about' %}">About</a>
+          <a href="{% url 'blog' %}">Writing</a>
           <a href="">Projects</a>
-          <a href="">Contact</a>
+          <a href="{% url 'contact' %}">Contact</a>
       </div>
     {% block main %}{% endblock %}
     <div class="footer menu">
