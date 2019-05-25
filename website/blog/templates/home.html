@@ -3,8 +3,8 @@
 {% block content %}
 <div class='header-section'>
     <h1>Hi, I'm Tyler</h1>
-    <h3> I am a...</h3>
-    <button class = "home-button">More About Me</button>
+    <h3> I am <span id="typed"></span></h3>      
+    <button class = "home-button">My Story</button>
     <br>
     <br>
 </div>  
@@ -34,16 +34,44 @@
     <div class = "banner">
         <h2>Got a project?</h2>
         <br>
-        <button class="home-button">Contact Me</button>
+        <button class="home-button">Let's Talk</button>
     </div>
     <div class = "secondary-content">
+            <div class="container">
+                    <div class="row">
+                      <div class="col-5">
+                          <br>
+                          <br>
+                            <h2>I write too.</h2>
+                            <h4>Usually about faith, tech, design, or entrepreneurship.</h4>
+                      </div>
+                      <div class="col">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <button class="secondary-button">Check out my blog</button>
+                      </div>
+                    </div>
+                  </div>
             <br>
             <br>
-            <h2>I write too.</h2>
-            <h3>Usually about faith, tech, design, or entrepreneurship.</h3>
-            <button class="secondary-button">Check out my blog</button>
-            <br>
+            
     <br>
         </div>
 </div>
+<div id="typed-strings">
+        <h3>a Creator</h3>
+        <h3>a Designer</h3>
+        <h3>a Developer</h3>
+        <h3>a Self-Starter</h3>
+    </div>
+
+    <script>
+            var typed = new Typed('#typed', {
+                stringsElement: '#typed-strings',
+                typeSpeed: 65
+             });
+    </script>
+   
 {% endblock %}

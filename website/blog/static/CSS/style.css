@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt|Raleway');
+
+/******* TEXT, MENUS, INPUTS ********/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Prompt', sans-serif;
+}
+
+p, li {
+    font-family: 'Raleway', sans-serif;
+}
+
+.menu {
+    list-style:none;
+    margin: 1%;
+    padding:0;
+}
+
+.menu li {
+    margin: 1%;
+    padding: 1%;
+    display: inline;
+    color: #fff;
+}
+
+/******* PAGE SECTIONS ********/
+
+.nav {
+    background: #081120;
+}
+
+.footer {
+    background: #081120;
+    padding: 2%;
+}
+
+.footer-text {
+    color:#fff;
+}
+
+.header-section {
+    background: url('/static/Images/starrynight.jpeg');
+    background-size:cover;
+}
+
+.header-section  h1 {
+    color: #fff;
+    text-align:center;
+    padding: 4%;
+}
+
+.header-section  h3 {
+    color: #fff;
+    text-align:center;
+    padding: 2%;
+}
+
+.main-content {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.main-content h2 {
+    text-align: center;
+    margin: 2%;
+}
+
+.banner {
+    background: #003B6C;
+    padding: 4% 0 4% 0;
+}
+
+.banner h2 {
+    color: #fff;
+    text-align: center;
+}
+
+/******* FORMS, BUTTONS, INPUTS ********/
+
+button {
+    padding: 1%;
+    margin: 1%;
+    border-radius: 5px;
+    border: none;
+}
+
+.home-button{
+    background: #FD7871;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+}
+
+.secondary-button{
+    background: #003B6C;
+    padding: 3%;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/******* IMAGES ********/
+.work-logo{
+    max-width: 100px;
+    max-height: 100px;;
+}
