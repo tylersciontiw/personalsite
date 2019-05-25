@@ -8,6 +8,15 @@ from .models import BlogPost
 class HomePage(TemplateView):
 	template_name = 'home.html'
 
+class Contact(TemplateView):
+	template_name = 'contact.html'
+
+class About(TemplateView):
+	template_name = 'about.html'
+
+class Portfolio(TemplateView):
+	template_name = 'portfolio.html'
+
 class BlogListView(ListView):
     model = BlogPost
     template_name = 'blog.html'

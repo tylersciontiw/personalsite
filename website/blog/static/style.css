@@ -45,7 +45,13 @@ p, li {
 .header-section  h1 {
     color: #fff;
     text-align:center;
-    padding: 10%;
+    padding: 4%;
+}
+
+.header-section  h3 {
+    color: #fff;
+    text-align:center;
+    padding: 2%;
 }
 
 .main-content {
@@ -73,6 +79,30 @@ p, li {
     color: #fff;
     text-align: center;
 }
+
+/******* FORMS, BUTTONS, INPUTS ********/
+
+button {
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10%;
+    border: none;
+}
+
+.home-button{
+    background: #FD7871;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+}
+
+.secondary-button{
+    background: #003B6C;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+}
+
 
 /******* IMAGES ********/
 .work-logo{
