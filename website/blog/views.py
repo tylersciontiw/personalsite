@@ -17,6 +17,9 @@ class About(TemplateView):
 class Portfolio(TemplateView):
 	template_name = 'portfolio.html'
 
+class Resume(TemplateView):
+	template_name = 'resume.html'
+
 class BlogListView(ListView):
     model = BlogPost
     template_name = 'blog.html'
