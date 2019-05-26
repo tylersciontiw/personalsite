@@ -15,16 +15,16 @@
 <header>
     <div class ="nav">
         <ul class="menu">
-            <li><img class = "logo" src='{% static "Images/logo.png" %}'></li>
-            <li>About</li>
+            <a href="{% url 'home' %}"><li><img class = "logo" src='{% static "Images/logo.png" %}'></li></a>
+            <a href="{% url 'about' %}"><li>About</li></a>
             <li>|</li>
-            <li>Blog</li>
+            <a href=""><li>Blog</li></a>
             <li>|</li>
-            <li>Portfolio</li>
+            <a href="{% url 'portfolio' %}"><li>Portfolio</li></a>
             <li>|</li>
-            <li>Resume</li>
+            <a href="{% url 'resume' %}"><li>Resume</li></a>
             <li>|</li>
-            <li>Contact</li>
+            <a href="{% url 'contact' %}"><li>Contact</li></a>
         </ul>
     </div>
 
