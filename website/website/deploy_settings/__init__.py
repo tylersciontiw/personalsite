@@ -1,4 +1,7 @@
 import dj_database_url
+import pymysql
+
+pymysql.install_as_MySQLdb()
 
 from ..settings import *
 
