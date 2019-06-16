@@ -1,4 +1,3 @@
-import dj_database_url
 import pymysql
 from ..settings import *
 
@@ -12,3 +11,12 @@ ALLOWED_HOSTS = [
 
 SECRET_KEY = get_env_variable("SECRET_KEY")
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'tylersciontipersonal$tylersciontipers$website',
+        'USER': 'tylersciontipers',
+        'PASSWORD': 'Dutch2002',
+        'HOST': 'tylersciontipersonal.mysql.pythonanywhere-services.com',
+    }
+}
