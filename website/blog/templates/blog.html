@@ -10,7 +10,15 @@
 <br>
 <br>
 <br>
-<h1>Content coming soon!</h1>
+    {% for article in object_list %}
+    <div class = "col-sm-4 blog-post-preview">
+        <img class = "featured" src = "{{article.featured_image.url}}"> 
+        <h3 class = "blog-title">{{ article.title }}</h3>
+        {{ article.text|truncatechars:300 }}
+    </div>
+    {% empty %}
+        No articles yet.
+    {% endfor %}
 <br>
 <br>
 <br>

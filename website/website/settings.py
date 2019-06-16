@@ -35,7 +35,7 @@ SECRET_KEY = '50s)7$!gqn2^^o)qql-7=nh+-%0)zq6i$7$*k#brp$1y70y_8_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -130,3 +130,6 @@ USE_TZ = True
 
 STATIC_ROOT = '/home/tylersciontipersonal/personalsite/blog/static'
 STATIC_URL = '/static/'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
