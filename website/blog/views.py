@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import View
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from django.views.generic.base import TemplateView
 from .models import BlogPost
 
@@ -23,3 +23,9 @@ class Resume(TemplateView):
 class BlogListView(ListView):
     model = BlogPost
     template_name = 'blog.html'
+
+class BlogPostView(DetailView):
+	model = BlogPost
+	template_name = 'post.html'
+	context_object_name = 'post'
+	

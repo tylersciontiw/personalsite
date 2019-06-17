@@ -1,4 +1,5 @@
 from django.urls import path, include
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
@@ -8,4 +9,5 @@ urlpatterns = [
     path('portfolio', views.Portfolio.as_view(), name='portfolio'),
     path('resume', views.Resume.as_view(), name='resume'),
     path('blog', views.BlogListView.as_view(), name='blog'),
+    path('post/<int:pk>', views.BlogPostView.as_view(), name='post'),
 ]

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<img class = "featured" src = "{{post.featured_image.url}}"> 
+<h3 class = "blog-title">{{ post.title }}</h3>
+    {{ pst.text }}
+</div>
+
+{% endblock content %}

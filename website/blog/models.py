@@ -1,4 +1,5 @@
 from django.db import models
+from tinymce.models import HTMLField
 
 class BlogPost(models.Model):
     author = models.ForeignKey(
@@ -6,7 +7,7 @@ class BlogPost(models.Model):
         on_delete=models.CASCADE,
     )
     title = models.CharField(max_length = 100)
-    text = models.TextField()
+    text = HTMLField()
     featured_image = models.ImageField(upload_to='images/', blank=True)
 
     def __str__(self):
