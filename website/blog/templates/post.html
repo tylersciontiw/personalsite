@@ -1,10 +1,22 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-
-<img class = "featured" src = "{{post.featured_image.url}}"> 
-<h3 class = "blog-title">{{ post.title }}</h3>
-    {{ post.text }}
+<div class = "image-title">
+<div class = "featured" style = "background: url('{{post.featured_image.url}}'); background-size:cover;">
+<h2 class = "blog-title">{{ post.title }}</h2>
 </div>
+</div>
+<div class="container">
+    <br>
+    <br>
+    <div class = "post-body .col-md-8">{{ post.text |safe }}</div>
 
+<h4>Like this post? Share it:</h4>
+<img class = "social-logo" src='{% static "Images/facebook.png" %}'></li>
+<img class = "social-logo" src='{% static "Images/twitter.png" %}'></li>
+<img class = "social-logo" src='{% static "Images/linkedin.png" %}'></li>
+<br>
+<br>
+</div>
 {% endblock content %}

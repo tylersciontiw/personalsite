@@ -90,10 +90,16 @@ p, li {
 
 .featured{
     max-width: 100%;
-    height: auto;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
 }
-h3.title {
-    margin: 2px;
+
+.featured h2 {
+    font-size: 3em;
+    color: #fff;
 }
 
 
@@ -126,4 +132,9 @@ button {
 .work-logo{
     max-width: 100px;
     max-height: 100px;;
+}
+
+.social-logo{
+    max-width: 50px;
+    max-height: 50px;;
 }
