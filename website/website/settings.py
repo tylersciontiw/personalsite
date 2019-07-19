@@ -133,4 +133,4 @@ STATIC_ROOT = '/home/tylersciontipersonal/personalsite/blog/static'
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/Users/tylerscionti/personalsite/website/media'
+MEDIA_ROOT = '/home/tylersciontipersonal/personalsite/website/media'
