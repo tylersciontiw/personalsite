@@ -74,6 +74,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media'
             ],
         },
     },
@@ -133,4 +134,4 @@ STATIC_ROOT = '/home/tylersciontipersonal/personalsite/blog/static'
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/home/tylersciontipersonal/personalsite/media/'
+MEDIA_ROOT = '/home/tylersciontipersonal/personalsite/website/media'
