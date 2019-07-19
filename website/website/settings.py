@@ -134,4 +134,4 @@ STATIC_ROOT = '/home/tylersciontipersonal/personalsite/blog/static'
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = 'https://www.pythonanywhere.com/user/tylersciontipersonal/files/home/tylersciontipersonal/personalsite/website/media'
+MEDIA_ROOT = '/home/tylersciontipersonal/personalsite/website/media/images'
