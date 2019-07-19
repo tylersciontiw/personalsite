@@ -8,7 +8,7 @@ class BlogPost(models.Model):
     )
     title = models.CharField(max_length = 100)
     text = HTMLField()
-    featured_image = models.ImageField(upload_to='images/', blank=True)
+    featured_image = models.ImageField(upload_to='', blank=True)
 
     def __str__(self):
         return self.title
