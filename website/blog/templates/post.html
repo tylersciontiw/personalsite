@@ -2,8 +2,12 @@
 {% load static %}
 
 {% block content %}
+<script language="javascript">
+    function tweetCurrentPage()
+    { window.open("https://twitter.com/share?url="+ encodeURIComponent(window.location.href)+"&text="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false; }
+</script>
 <div class = "image-title">
-<div class = "featured" style = "background: url('{{post.featured_image.url}}'); background-size:cover;">
+<div class = "featured" style = "background: linear-gradient(rgb(9, 17, 32, 0.45),rgb(9, 17, 32, 0.45)), url('{{post.featured_image.url}}'); background-size:cover;">
 <h2 class = "blog-title">{{ post.title }}</h2>
 </div>
 </div>
@@ -12,10 +16,8 @@
     <br>
     <div class = "post-body .col-md-8">{{ post.text |safe }}</div>
 
-<h4>Like this post? Share it:</h4>
-<img class = "social-logo" src='{% static "Images/facebook.png" %}'></li>
-<img class = "social-logo" src='{% static "Images/twitter.png" %}'></li>
-<img class = "social-logo" src='{% static "Images/linkedin.png" %}'></li>
+<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d3329e2989cd201"></script>
 <br>
 <br>
 </div>
