@@ -7,13 +7,19 @@
     <a href="{% url 'about' %}"><button class = "home-button">My Story</button></a>
     <br>
     <br>
-</div>  
+</div> 
+<div class = "banner">
+    <br>
+        <h2>I am passionate about seeing things <span style="color: #FD7871;">grow</span></h2>
+        <br>
+    </div> 
 <br>
 <br>
 <div class = "main-body">
     <div class = "main-content">
         <h2>I build with:</h2>
         <div class = "logos">
+            <img class = "work-logo" src='{% static "Images/wordpress.png" %}'>
             <img class = "work-logo" src='{% static "Images/html.png" %}'>
             <img class = "work-logo" src='{% static "Images/css.png" %}'>
             <img class = "work-logo" src='{% static "Images/django.png" %}'>
@@ -32,9 +38,12 @@
    <br>
     <br>
     <div class = "banner">
-        <h2>More about me</h2>
+        <h2>Got a project?</h2>
         <br>
-        <a href="{% url 'resume' %}"><button class="home-button">My resume</button></a>
+        <h4>From site development to marketing strategy, I'd love to help.</h4>
+        <br>
+        <a href="{% url 'contact' %}"><button class="home-button">Let's talk</button></a>
+        <br>
     </div>
     <div class = "secondary-content">
             <div class="container">
@@ -50,7 +59,7 @@
                             <br>
                             <br>
                             <br>
-                            <a href="{% url 'blog' %}"><button class="secondary-button">Check out my blog</button>
+                            <a href="{% url 'blog' %}"><button class="secondary-button">Check out my recent posts</button>
                       </div>
                     </div>
                   </div>
@@ -62,9 +71,9 @@
 </div>
 <div id="typed-strings">
         <h3>a Creator</h3>
-        <h3>a Designer</h3>
+        <h3>a Writer</h3>
         <h3>a Developer</h3>
-        <h3>a Self-Starter</h3>
+        <h3>a Designer</h3>
     </div>
 
     <script>

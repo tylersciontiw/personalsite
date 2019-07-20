@@ -86,6 +86,11 @@ p, li {
     text-align: center;
 }
 
+.banner h4 {
+    color: #fff;
+    text-align: center;
+}
+
 /******* BLOG ********/
 
 .featured{
