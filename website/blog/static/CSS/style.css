@@ -46,6 +46,9 @@ p, li {
 .header-section {
     background: url('/static/Images/starrynight.jpeg');
     background-size:cover;
+}
+
+.home-banner {
     min-height: 600px;
 }
 
