@@ -12,7 +12,7 @@
 <br>
 <div class="container">
 <div class = "post-body col-md-8 offset-md-2">
-    {% for article in object_list %}
+    {% for article in object_list reversed %}
     <div class = "blog-post-preview">
         <img class = "featured" src = "{{article.featured_image.url}}"> 
         <h3 class = "blog-title">{{ article.title }}</h3>
