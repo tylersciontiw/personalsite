@@ -12,3 +12,12 @@ class BlogPost(models.Model):
 
     def __str__(self):
         return self.title
+
+class Project(models.Model):
+    title = models.CharField(max_length = 100)
+    link = models.CharField(max_length = 100)
+    about = HTMLField()
+    featured_image = models.ImageField(upload_to='', blank=True)
+
+    def __str__(self):
+        return self.title

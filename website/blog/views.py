@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views import View
 from django.views.generic import ListView, DetailView, FormView
 from django.views.generic.base import TemplateView
-from .models import BlogPost
+from .models import BlogPost, Project
 from .forms import ContactForm
 
 
@@ -18,7 +18,9 @@ class About(TemplateView):
 	template_name = 'about.html'
 
 class Portfolio(TemplateView):
+	model = Project
 	template_name = 'portfolio.html'
+	context_object_name = 'project'
 
 class Resume(TemplateView):
 	template_name = 'resume.html'
