@@ -6,5 +6,17 @@
     <br>
     <br>
 </div>  
+{% for project in object_list %}
+<div class = "blog-post-preview">
+    <img class = "featured" src = "{{projectfeatured_image.url}}"> 
+    <h3 class = "blog-title">{{ project.title }}</h3>
+    <h3>{{project.link}}</h3>
+    {{ project.text|truncatechars:300 }} 
+    <br>
+    <br>
+</div>
+{% empty %}
+    No articles yet.
+{% endfor %}
    
 {% endblock %}

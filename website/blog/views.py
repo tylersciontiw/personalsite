@@ -20,7 +20,6 @@ class About(TemplateView):
 class Portfolio(TemplateView):
 	model = Project
 	template_name = 'portfolio.html'
-	context_object_name = 'project'
 
 class Resume(TemplateView):
 	template_name = 'resume.html'
