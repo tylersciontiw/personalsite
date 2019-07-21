@@ -17,7 +17,7 @@ class Contact(FormView):
 class About(TemplateView):
 	template_name = 'about.html'
 
-class Portfolio(TemplateView):
+class Portfolio(ListView):
 	model = Project
 	template_name = 'portfolio.html'
 
