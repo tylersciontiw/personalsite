@@ -7,10 +7,17 @@
     <br>
 </div>  
 <br>
+<div class='col-md-8 offset-md-2'>
+<h2>Let's chat</h2>
 <br>
+<p>Need help with a project? Have some thoughts on a post from my blog?<br><br>Whatever it is, let's chat.<br> Submit the form below with your info and request and I'll try to follow up as quickly as I can.</p>
 <br>
-<br>
-<h1>Content coming soon!</h1>
+<form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit" />
+    </form>
+</div>
 <br>
 <br>
 <br>

@@ -1,15 +1,18 @@
 from django.shortcuts import render
 from django.views import View
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, FormView
 from django.views.generic.base import TemplateView
 from .models import BlogPost
+from .forms import ContactForm
 
 
 class HomePage(TemplateView):
 	template_name = 'home.html'
 
-class Contact(TemplateView):
-	template_name = 'contact.html'
+class Contact(FormView):
+    template_name = 'contact.html'
+    form_class = ContactForm
+    success_url = '/thanks/'
 
 class About(TemplateView):
 	template_name = 'about.html'
