@@ -6,7 +6,7 @@ TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = [ 
 	'localhost',
-    '.pythonanywhere.com'
+    '.pythonanywhere.com',
     'www.tylerscionti.com'
 ]
 
