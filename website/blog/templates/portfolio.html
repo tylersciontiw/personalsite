@@ -6,6 +6,7 @@
     <br>
     <br>
 </div>  
+<div class = "post-body col-md-10 offset-md-2">
 {% for project in object_list %}
 <div class = "blog-post-preview">
     <img class = "featured" src = "{{project.featured_image.url}}"> 
@@ -18,5 +19,5 @@
 {% empty %}
     No projects yet.
 {% endfor %}
-   
+</div>
 {% endblock %}
