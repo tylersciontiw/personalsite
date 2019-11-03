@@ -30,12 +30,16 @@ p, li {
 
 /******* PAGE SECTIONS ********/
 
+body {
+    background: #F5F1E5;
+}
+
 .nav {
-    background: #081120;
+    background: #0C4557;
 }
 
 .footer {
-    background: #081120;
+    background: #0C4557;
     padding: 2%;
 }
 
@@ -44,14 +48,8 @@ p, li {
 }
 
 .header-section {
-    background: url('/static/Images/starrynight.jpeg');
-    background-size:cover;
+    background:#0C4557;
 }
-
-.home-banner {
-    min-height: 600px;
-}
-
 .header-section  h1 {
     color: #fff;
     text-align:center;
