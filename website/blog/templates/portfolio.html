@@ -6,22 +6,24 @@
     <br>
     <br>
 </div>  
-<div class = "post-body col-md-10 offset-md-2">
+<div class="container">
+    <div class = "post-body col-md-10 offset-md-2">
         <br>
         <br>
-{% for project in object_list %}
-<div class = "project-tile">
-    <img class = "featured" src = "{{project.featured_image.url}}"> 
-    <h3 class = "blog-title">{{ project.title }}</h3>
-    <h3>{{project.link}}</h3>
-    {{ project.text|truncatechars:300 }} 
-    <br>
-    <br>
-</div>
-{% empty %}
-    No projects yet.
-{% endfor %}
-<br>
-<br>
+        {% for project in object_list %}
+        <div class = "project-tile">
+            <img class = "project-image" src = "{{project.featured_image.url}}"> 
+            <h3 class = "blog-title">{{ project.title }}</h3>
+            <h3>{{project.link}}</h3>
+            {{ project.text|truncatechars:300 }} 
+            <br>
+            <br>
+        </div>
+        {% empty %}
+            No projects yet.
+        {% endfor %}
+        <br>
+        <br>
+    </div>
 </div>
 {% endblock %}

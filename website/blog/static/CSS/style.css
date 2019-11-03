@@ -142,6 +142,14 @@ input[type=submit] {
     border-radius: 5px;
 }
 
+.project-image {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
 /******* FORMS, BUTTONS, INPUTS ********/
 
 button {
