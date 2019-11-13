@@ -11,8 +11,7 @@
         <br>
         <br>
         {% for project in object_list %}
-        <div class = "project-tile">
-            <img class = "project-image" src = "{{project.featured_image.url}}"> 
+        <div class = "project-tile" style="background:url('{{project.featured_image.url}}'); background-size:cover;">
             <h3 class = "blog-title">{{ project.title }}</h3>
             <h3>{{project.link}}</h3>
             {{ project.text|truncatechars:300 }} 
