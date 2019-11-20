@@ -28,6 +28,15 @@ p, li {
     color: #fff;
 }
 
+
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    font-size: 1.25em;
+}
 /******* PAGE SECTIONS ********/
 
 body {
