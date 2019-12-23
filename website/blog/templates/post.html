@@ -2,8 +2,12 @@
 {% load static %}
 {% block extra_head %}
 <title>{{ post.title }}</title>
-<meta name="description" content={{post.description}}/>
-<meta property="og:image" content={{post.featured_image.url}} />
+<meta name="description" content="{{post.description}}"/>
+<meta property="og:image" content="{{post.featured_image.url}}"/>
+
+<meta name="twitter:description" content="{{post.description}}">
+<meta name="twitter:title" content="{{ post.title }}">
+<meta name="twitter:image" content="{{post.featured_image.url}}"/>
 
 {% endblock %}
 {% block content %}
