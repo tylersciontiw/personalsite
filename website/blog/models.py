@@ -10,6 +10,7 @@ class BlogPost(models.Model):
     text = HTMLField()
     featured_image = models.ImageField(upload_to='', blank=True)
     draft_status = models.NullBooleanField(default=None)
+    description = models.CharField(max_length = 160, blank=True, null=True)
 
     def __str__(self):
         return self.title

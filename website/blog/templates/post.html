@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block extra_head %}
+<title>{{ post.title }}</title>
+<meta name="description" content={{post.description}}/>
+<meta property="og:image" content={{post.featured_image.url}} />
 
+{% endblock %}
 {% block content %}
 <script language="javascript">
     function tweetCurrentPage()
@@ -8,7 +13,7 @@
 </script>
 <div class = "image-title">
 <div class = "featured" style = "background: linear-gradient(rgb(9, 17, 32, 0.45),rgb(9, 17, 32, 0.45)), url('{{post.featured_image.url}}'); background-size:cover;">
-<h2 class = "blog-title">{{ post.title }}</h2>
+<h1 class = "blog-title">{{ post.title }}</h1>
 </div>
 </div>
 <div class="container">

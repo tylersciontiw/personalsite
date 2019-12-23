@@ -35,7 +35,7 @@ blockquote {
     margin-block-end: 1em;
     margin-inline-start: 40px;
     margin-inline-end: 40px;
-    font-size: 1.25em;
+    font-size: 1.15em;
 }
 /******* PAGE SECTIONS ********/
 
@@ -102,6 +102,9 @@ body {
     text-align: center;
 }
 
+.blog-title {
+    color: #fff;
+}
 /******* CONTACT FORM ********/
 
 input {
@@ -138,7 +141,7 @@ input[type=submit] {
 
 }
 
-.featured h2 {
+.featured h1 {
     font-size: 3em;
     color: #fff;
 }
