@@ -7,6 +7,7 @@ class BlogPost(models.Model):
         on_delete=models.CASCADE,
     )
     title = models.CharField(max_length = 100)
+    slug = models.SlugField(max_length=100, default="#", unique=True)
     text = HTMLField()
     featured_image = models.ImageField(upload_to='', blank=True)
     draft_status = models.NullBooleanField(default=None)
@@ -16,7 +17,7 @@ class BlogPost(models.Model):
         return self.title
     
     def get_absolute_url(self):
-        return f"/blog/{self.title}/"
+        return f"/blog/{self.slug}/"
 
 
 class Project(models.Model):

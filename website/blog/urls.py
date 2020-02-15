@@ -16,5 +16,5 @@ urlpatterns = [
     path('portfolio', views.Portfolio.as_view(), name='portfolio'),
     path('resume', views.Resume.as_view(), name='resume'),
     path('blog', views.BlogListView.as_view(), name='blog'),
-    path('post/<int:pk>', views.BlogPostView.as_view(), name='post'),
+    url('blog/(?P<model_slug>[\w-]+)/$', views.BlogPostView.as_view(), name = 'post')
 ]

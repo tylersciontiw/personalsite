@@ -30,6 +30,8 @@ class BlogListView(ListView):
 
 class BlogPostView(DetailView):
 	model = BlogPost
+	slug_field = 'slug'
+	slug_url_kwarg = 'model_slug'
 	template_name = 'post.html'
 	context_object_name = 'post'
-	
+
