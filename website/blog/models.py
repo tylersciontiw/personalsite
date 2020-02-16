@@ -11,10 +11,13 @@ class BlogPost(models.Model):
     featured_image = models.ImageField(upload_to='', blank=True)
     draft_status = models.NullBooleanField(default=None)
     description = models.CharField(max_length = 160, blank=True, null=True)
-
+    slug = models.SlugField(max_length=100, default="#")
+    
     def __str__(self):
         return self.title
-
+  
+    def get_absolute_url(self):
+        return f"/blog/{self.slug}/"
 
 class Project(models.Model):
     title = models.CharField(max_length = 100)
