@@ -7,7 +7,7 @@ class BlogPost(models.Model):
         on_delete=models.CASCADE,
     )
     title = models.CharField(max_length = 100)
-    slug = models.SlugField(max_length=100, default="#", unique=True)
+    slug = models.SlugField(max_length=100, default="#")
     text = HTMLField()
     featured_image = models.ImageField(upload_to='', blank=True)
     draft_status = models.NullBooleanField(default=None)
